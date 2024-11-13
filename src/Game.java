@@ -1,4 +1,10 @@
-package PACKAGE_NAME;
-
 public class Game {
+
+    public Game() {
+        Character player = new Character(100, "");
+
+        player.introduction();
+
+    }
 }
+
