@@ -1,14 +1,16 @@
 import java.util.Scanner;
 
 public class Armor extends Item {
+    // Attribute
     private float protection;
 
+    //Constructor
     public Armor(float protection, String name, float weight) {
         super(name, weight);
         this.protection = protection;
 
     }
-
+// Method for picking up the helmet
     public static void pickUpHelmet(Scanner sc, Inventory backpack) {
         System.out.println("Infront of you lies a helmet, do you wish to pick it up? (y/n)");
         System.out.print(">>> ");

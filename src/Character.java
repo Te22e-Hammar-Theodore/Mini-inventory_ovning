@@ -1,6 +1,7 @@
 import java.util.Scanner;
 
 public class Character {
+    //Attributes
     public int usesCurrent;
     private int hp;
     private String name;
@@ -8,12 +9,14 @@ public class Character {
     private boolean gameOver;
     Scanner sc = new Scanner(System.in);
 
+    //Constructor
     public Character(int hp, String name) {
         this.hp = hp;
         this.name = name;
         this.backpack = new Inventory();
     }
 
+    // Intro-method
     public void introduction() {
         System.out.println("Welcome to Mini-inventory");
         System.out.println("What is the name of the character?");
@@ -34,7 +37,7 @@ public class Character {
 
             int choice = sc.nextInt();
             sc.nextLine();
-
+            // Switch for menu-choise
             switch (choice) {
                 case 1:
                     backpack.display();
